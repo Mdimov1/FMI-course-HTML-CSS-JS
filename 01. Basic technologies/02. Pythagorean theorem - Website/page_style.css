@@ -1,0 +1,84 @@
+body {
+	background-color: #42B0D1;
+	color: #1A4551;
+	font-family: Arial, sanserif;
+}
+
+.page {
+	background-color: AntiqueWhite;
+	color: #1A4551;
+	font-family: Arial, sanserif;
+	padding: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+li {
+	background-color: rgba(135,206,235,1.0);
+	display: inline;
+	padding: 7px 10px;
+	text-align: center;
+}
+
+ul{
+	text-align: center;
+	border-bottom: solid #3690AB 1px;
+	padding-bottom: 20px;
+}
+
+.theo{
+	background-color: #FFFBF5;
+	color: #42B0D1;
+	font-family: Times New Roman, serif;
+	font-style: italic;
+	border-left: solid #42B0D1 12px;
+	border-right: solid #42B0D1 12px;
+	margin: 3% 10%;
+	padding: 5px 1%;
+}
+
+h1{
+	color: #3690AB;
+	text-align: center;
+	font-family: Arial, sanserif;
+	text-transform: uppercase;
+}
+
+p{
+	text-align: justify;
+}
+
+.formula{
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+sup{
+	font-size: 60%;
+}
+
+p b{
+	font-size: 120%;
+}
+li a:link{
+	text-decoration: none;
+	color: AntiqueWhite;
+}
+
+li a:visited{
+	color: #3690AB;
+}
+
+li a:hover {
+	color: #FFFFFF;
+}
+
+li:hover {
+	background-color: brown;
+}
+
+img {
+	position: relative;
+	margin-left: 40%;
+}

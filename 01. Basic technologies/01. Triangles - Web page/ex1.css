@@ -1,0 +1,55 @@
+body{
+	background-color: Wheat;
+	color: #A0522D;
+	text-align: justify;
+	font-family: "Arial";
+}
+
+h1{
+	text-align: center;
+}
+
+h1, h3{
+	background-color: white;
+}
+
+p{
+	margin-left: 2cm;
+	margin-right: 2cm;
+}
+
+li {
+	margin-left: 1.3cm;
+	margin-right: 2cm;
+}
+
+p i{
+	color: red;
+}
+
+#formula{
+	text-align: center;
+	font-family: "Times New Roman";
+	color: red;
+	font-size: 28px;
+}
+
+.frame{
+	border: solid #A0522D 2px;
+}
+
+[background] {
+	background-color: yellow;
+}
+
+a:link{
+	color: green;
+}
+
+a:visited{
+	color: yellow;
+}
+
+a:hover, h1:hover, h3:hover{
+	background-color: orange;
+}
