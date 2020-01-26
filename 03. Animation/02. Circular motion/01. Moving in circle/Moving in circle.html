@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise</title>
+		<script src="suica.min.js"></script>
+		
+		<script>
+			function main()
+			{
+				p = new Suica();
+				
+				//oxyz();
+				demo();
+				
+				R = 2;
+				r = 15;
+				a = radians(random(0,360));
+				
+				c = circle([0,0,0], r).custom({
+					mode: Suica.LINE
+				});
+				
+				s = sphere([r*Math.cos(a), r*Math.sin(a), 0], R);
+				
+				p.nextFrame = loop;
+				
+			}
+			
+			function loop()
+			{	
+				k = radians(1);
+				s.center = [r*Math.cos(a),r*Math.sin(a),0];
+				a += k;
+				
+			}
+		</script>
+		
+	</head>
+	<body onload="main()">
+		<canvas width="1300" height="800" style="border: solid black 1px;">Не се поддържа canvas!</canvas>
+		<noscript>Не се поддържа JS!</noscript>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise</title>
+		<script src="suica.min.js"></script>
+		
+		<script>
+			function main()
+			{
+				p = new Suica();
+				
+				oxyz();
+				demo();
+				
+				var r = 5;
+				s = sphere([0,0,0], r);
+				
+				p.nextFrame = moveZ;
+			}
+			
+			function moveZ(){
+				var k = 4;
+				s.center[2] += k*Suica.dTime; 
+			}
+		</script>
+		
+	</head>
+	<body onload="main()">
+		<canvas width="1300" height="800" style="border: solid black 1px;">Не се поддържа canvas!</canvas>
+		<noscript>Не се поддържа JS!</noscript>
+	</body>
+</html>
