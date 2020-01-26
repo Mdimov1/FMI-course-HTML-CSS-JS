@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise</title>
+		<script src="suica.min.js"></script>
+		
+		<script>
+			function main()
+			{
+				p = new Suica();
+								
+				oxyz();
+				demo();
+				
+				alpha = radians(0);
+				h = 12;
+				rC = 4;
+				rS = 0.8;
+				
+				c = cylinder([0,0,0], rC, h).custom({color: [1,1,0]});
+				s = sphere([2.2, 2.2, 15], rS);
+				
+				p.nextFrame = loop;
+			}
+			
+			function loop(){
+				k = radians(2);
+				
+				s.center = [(rC-1)*Math.cos(alpha), (rC-1)*Math.sin(alpha), h];
+				
+				alpha += k;
+			}
+		</script>
+		
+	</head>
+	<body onload="main()">
+		<canvas width="1300" height="800" style="border: solid black 1px;">Не се поддържа canvas!</canvas>
+		<noscript>Не се поддържа JS!</noscript>
+	</body>
+</html>
