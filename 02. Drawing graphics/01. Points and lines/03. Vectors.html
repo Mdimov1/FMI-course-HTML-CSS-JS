@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise</title>
+		<script src="suica.min.js"></script>
+		<script>
+			function vSize(v){
+				return Math.sqrt(Math.pow(v[0], 2) + Math.pow(v[1], 2) + 
+				Math.pow(v[2], 2));
+			}
+			
+			function main()
+			{							
+				xa = Number(document.getElementById('xa').value);
+				ya = Number(document.getElementById('ya').value);
+				za = Number(document.getElementById('za').value);
+						
+				xb = Number(document.getElementById('xb').value);
+				yb = Number(document.getElementById('yb').value);
+				zb = Number(document.getElementById('zb').value);
+				
+				xc = Number(document.getElementById('xc').value);
+				yc = Number(document.getElementById('yc').value);
+				zc = Number(document.getElementById('zc').value);
+				
+				a = [xa, ya, za];
+				b = [xb, yb, zb];
+				c = [xc, yc, zc];
+				
+				var AB = vectorPoints(a,b);
+				var CA = vectorPoints(c,a);
+				var CB = vectorPoints(c,b);
+				
+				document.getElementById('res').innerHTML = 'Coordinates of vectors: AB['+ AB+'], CA['+CA+'], CB['+CB+']';
+				document.getElementById('res1').innerHTML = 'Size of vectors: AB = '+vSize(AB)+', CA = '+vSize(CA)+', CB = '+vSize(CB);
+				document.getElementById('res2').innerHTML = 'Scalar of CA.CB = '+scalarProduct(CA,CB);
+			}
+		</script>
+		
+	</head>
+	
+	<body>
+		<p>
+		Enter coordinates of vector <b>A</b>:
+		
+		<input type="text" id="xa" value=""></input>
+		<input type="text" id="ya" value=""></input>
+		<input type="text" id="za" value=""></input>
+		</p>
+		
+		<p>Enter coordinates of vector <b>B</b>:
+		
+		<input type="text" id="xb" value=""></input>
+		<input type="text" id="yb" value=""></input>
+		<input type="text" id="zb" value=""></input>
+		</p>
+		
+		<p>
+		Enter coordinates of vector <b>C</b>:
+		
+		<input type="text" id="xc" value=""></input>
+		<input type="text" id="yc" value=""></input>
+		<input type="text" id="zc" value=""></input>
+		</p>
+		
+		<button onclick="main()">Result</button>
+		
+		<p id="res"></p>
+		<p id="res1"></p>
+		<p id="res2"></p>
+		
+		<noscript>Не се поддържа JS!</noscript>
+	</body>
+</html>

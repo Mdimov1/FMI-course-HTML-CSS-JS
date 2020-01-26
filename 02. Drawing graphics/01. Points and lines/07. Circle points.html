@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise</title>
+		<script src="suica.min.js"></script>
+		
+		<script>
+			function main(n, r)
+			{
+				new Suica();
+					
+				oxyz();
+				demo();
+				
+				var a = radians(random(0,360));
+				
+				for(var i=0; i<n; i++){
+					x = r*Math.cos(a);
+					y = r*Math.sin(a);
+					
+					p = point([x,y,0]);
+					p.color = [random(0,1),random(0,1),random(0,1)];
+					p.pointSize = 5;
+					
+					a = radians(random(0,360));
+				}
+
+			}
+		</script>
+		
+	</head>
+	<body onload="main(30, 8)">
+		<canvas width="1300" height="800" style="border: solid black 1px;">Не се поддържа canvas!</canvas>
+		<noscript>Не се поддържа JS!</noscript>
+	</body>
+</html>

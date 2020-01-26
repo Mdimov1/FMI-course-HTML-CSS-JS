@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise</title>
+		<script src="suica.min.js"></script>
+		
+		<script>
+			function main(n, r, x, y, z)
+			{
+				new Suica();
+					
+				oxyz();
+				demo();
+				
+				for(var i=0; i<n; i++){
+					var a = random(0,radians(360));
+					var b = a + 360/n;
+					
+					var x1 = x;
+					var y1 = y + r*Math.sin(a);
+					var z1 = z + r*Math.cos(a);
+					
+					var x2 = x;
+					var y2 = y + r*Math.sin(b);
+					var z2 = z + r*Math.cos(b);
+					
+					segment([x1,y1,z1], [x2,y2,z2]);
+				}
+			}
+		</script>
+		
+	</head>
+	<body onload="main(90, 15 , 15, 28, 10)">
+		<canvas width="1300" height="800" style="border: solid black 1px;">Не се поддържа canvas!</canvas>
+		<noscript>Не се поддържа JS!</noscript>
+	</body>
+</html>

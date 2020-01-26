@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise</title>
+		<script src="suica.min.js"></script>
+		
+		<script>
+			function main(n, r, x, y, z)
+			{
+				new Suica();
+					
+				oxyz();
+				demo();
+				
+				for(var i=0; i<n; i++){
+					var a = radians(random(0, 360));
+					
+					var x1 = x+r*Math.cos(a);
+					var y1 = y+r*Math.sin(a);
+					var z1 = z;
+					
+					a = radians(random(0, 360));
+					var x2 = x+r*Math.cos(a);
+					var y2 = y+r*Math.sin(a);
+					var z2 = z;
+					
+					s = segment([x1,y1,z1], [x2, y2, z2]);
+					s.focus = [-1,0,0];
+				}
+			}
+		</script>
+		
+	</head>
+	<body onload="main(60, 9, 1, 2, 1)">
+		<canvas width="1300" height="800" style="border: solid black 1px;">Не се поддържа canvas!</canvas>
+		<noscript>Не се поддържа JS!</noscript>
+	</body>
+</html>

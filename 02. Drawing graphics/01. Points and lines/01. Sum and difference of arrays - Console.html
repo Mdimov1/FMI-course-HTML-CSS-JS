@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise</title>		
+		<script>
+			function main()
+			{
+				var p = [12,8,-1];
+				var q = [5,3,1];
+				
+				console.log(sum(p, q));
+				console.log(diff(p, q));
+			}
+			
+			function sum(p, q){
+				var sum = [];
+				
+				for(var i=0; i<p.length; i++){
+					sum[i] = p[i] + q[i];
+				}
+				
+				return sum;
+			}
+			
+			function diff(p, q){
+				var diff = [];
+				
+				for(var i=0; i<p.length; i++){
+					diff[i] = p[i] - q[i];
+				}
+				
+				return diff;
+			}
+		</script>
+		
+	</head>
+	<body onload="main()">
+		<noscript>Cannot find JS!</noscript>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise</title>
+		
+		<script>
+			function vSize(v){
+				return Math.sqrt(Math.pow(v[0], 2) + Math.pow(v[1], 2) + 
+				Math.pow(v[2], 2));
+			}
+			
+			function calc(f)
+			{							
+				xp = Number(document.getElementById('xp').value);
+				yp = Number(document.getElementById('yp').value);
+				zp = Number(document.getElementById('zp').value);
+						
+				xq = Number(document.getElementById('xq').value);
+				yq = Number(document.getElementById('yq').value);
+				zq = Number(document.getElementById('zq').value);
+				
+				p = [xp, yp, zp];
+				q = [xq, yq, zq];
+				
+				if(f==1){
+					document.getElementById('res').innerHTML = 'Sum of p and q is ' + sum(p,q);
+				}else{
+					document.getElementById('res').innerHTML = 'Diff of p and q is ' + diff(p,q);
+				}
+			}
+			
+			function sum(p,q){
+				return vSize(p) + vSize(q);
+			}
+			
+			function diff(){
+				return vSize(p) + vSize(q);
+			}
+		</script>
+		
+	</head>
+	<body>
+		<p>
+		Enter coordinates of vector <b>p</b>:
+		
+		<input type="text" id="xp" value=""></input>
+		<input type="text" id="yp" value=""></input>
+		<input type="text" id="zp" value=""></input>
+		</p>
+		
+		<p>Enter coordinates of vector <b>q</b>:
+		
+		<input type="text" id="xq" value=""></input>
+		<input type="text" id="yq" value=""></input>
+		<input type="text" id="zq" value=""></input>
+		</p>
+		
+		<button onclick="calc(1)">+</button>
+		<button onclick="calc(2)">-</button>
+		
+		<p id="res"></p>
+		
+		<noscript>Не се поддържа JS!</noscript>
+	</body>
+</html>

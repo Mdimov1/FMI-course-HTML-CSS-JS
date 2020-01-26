@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise</title>
+		<script src="suica.min.js"></script>
+		
+		<script>
+			function main(n, m, x, y, z)
+			{
+				new Suica();
+					
+				oxyz();
+				demo();
+				
+				var s = group([
+				segment([x,y,z], [x,y+m,z]),
+				segment([x,y,z], [x+n,y,z]),
+				segment([x+n,y,z], [x+n,y+m,z]),
+				segment([x,y+m,z], [x+n,y+m,z]),
+				//Diagonals
+				segment([x,y,z], [x+n,y+m,z]),
+				segment([x,y+m,z], [x+n,y,z])]);
+				
+				s.mergeColor = [0,1,0];
+				
+				point([x,y,z]).custom({
+				color: [1,0,0], 
+				pointSize: 10});
+				point([x+n,y,z]).custom({color: [1,0,0], pointSize: 10});
+				point([x,y+m,z]).custom({color: [1,0,0], pointSize: 10});
+				point([x+n,y+m,z]).custom({color: [1,0,0], pointSize: 10});
+				
+			}
+		</script>
+		
+	</head>
+	<body onload="main(5, 7, 1, 2, 1)">
+		<canvas width="1300" height="800" style="border: solid black 1px;">Не се поддържа canvas!</canvas>
+		<noscript>Не се поддържа JS!</noscript>
+	</body>
+</html>
