@@ -1,0 +1,202 @@
+body
+{
+	margin: auto;
+	padding: 0 50px;
+	background-image: url("top2.png"), url("mid1.png");
+	background-position: top bottom, center center;
+	background-repeat: repeat-x, repeat;
+	text-align: center;
+	font-family: 'Times New Roman', serif;
+	color: Black;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+a.vazov:visited, a.vazov:link, a.geo:visited, a.geo:link {
+	text-decoration: none;
+}
+
+a.vazov:hover, a.vazov:active, .geo:hover, a.geo:active {
+	background: yellow;
+	text-decoration: underline;
+}
+
+div.btn:hover, div.btntop:hover{
+	background-color: brown;
+}
+
+h1
+{
+	font-family: Garamond, 'Times New Roman', brown;
+	font-size: 3em;
+	margin: 0.25em 0 0 0;
+	color: brown;
+	text-shadow: 1px 1px 3px Black;
+}
+
+h4
+{
+	font-weight: normal;
+	font-size: 100%;
+	margin: 0.4em 0 0.5em 0;
+}
+
+td{
+	margin-top: 0.3em;				
+	padding: 0 15px;
+	font-size: 1.15em;
+	text-align: justify;
+}
+
+img{
+	margin-right: 2em;
+}
+
+div.btn, div.btntop
+{
+	max-width: 135px;
+	color: White;
+	text-align: center;
+	cursor: pointer;
+	margin-left: 43%;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+	border-radius: 10px 10px;
+	border: solid 2px Chocolate;
+	padding: 0.2em 1em;
+	background-color: Chocolate;
+	position: relative;
+	display: block;
+}
+
+div.sectionScens{
+	margin-left: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+div.section
+{
+	margin: 1em 5em 1em 5em;
+	padding: 5px 5px;
+	border-style: inset;
+	border-width: 3px;
+	border-color: coral;
+	border-radius: 7px;
+	background: linear-gradient(NavajoWhite,Beige,White);
+}
+.tableAndImg{
+	position: relative;
+}
+
+table.tableAndImg{
+	width: 40%;
+	height: 100px;
+	margin-left: 50px;
+	margin-right: 500px;
+	margin-top: 50px;
+}
+
+table.tableAndImg th{
+	text-align: justify;
+	font-size: 1.31em;
+	height: 30px;
+	vertical-align: top;
+}
+
+table.tableAndImg td {
+	height: 28px;
+	vertical-align: center;
+}
+
+div.tableAndImg{
+	position: right;
+	margin-top: -200px;
+}
+
+hr {
+	border-top: 1px dotted red;
+	margin: 0 40px;
+}
+
+li
+{
+	margin-left: 3.1em;
+	text-align: justify;
+	font-size: 1.01em;
+}
+
+p b
+{
+	margin-top: 0.3em;				
+	padding: 0 15px;
+	text-align: justify;
+	font-size: 1.01em;
+	text-indent: 1.5em;
+}
+
+.citats{
+	margin-top: 0.3em;				
+	padding: 0 15px;
+	text-align: center;
+	font-size: 1.2em;
+	color: red;
+	text-indent: 1.5em;
+}
+
+p
+{
+	margin: 0.25em;
+	margin-bottom: 1em;	
+	padding: 0 15px;
+	text-align: justify;
+	font-size: 1.15em;
+	text-indent: 1.5em;
+}
+
+.btnLinesOfTheBattle {
+	position: relative; 
+	top:-600px; 
+	margin-left: 20%;
+	text-align: center; 
+	width:800px;			
+}	
+
+.btnPeriodsOfFights{
+	position: relative; 
+	top:-590px; 
+	margin-left: 20%;
+	text-align: center; 
+	width:800px;	
+}
+
+label {
+	color: DarkRed;
+}
+
+li.battlePicture{
+	margin-bottom: 0.3em;
+	list-style-type: none;
+	text-align: right;
+	margin-right: 35px;
+}
+
+li.subTitle{
+	text-align: right;
+	margin-right: 75px;
+	font-size: 0.85em;
+	list-style-type: none;
+}
+
+input{
+	display: inline;
+	padding: 0.2em 1em;
+	margin: 0 0.5em;
+	position: relative;
+}
